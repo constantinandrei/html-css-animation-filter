@@ -76,8 +76,8 @@
     background: #f5f5f5;
     width: 60px;
     height: 20px;
-    border: 1px dashed black;
 }
+
 .ex-12-bottom-white, .ex-13-bottom-white {
     position: absolute;
     bottom: -10px;
@@ -85,7 +85,6 @@
     background: #f5f5f5;
     width: 60px;
     height: 20px;
-    border: 1px dashed black;
 }
 
 .ex-1-square:hover {
@@ -267,12 +266,12 @@
 @keyframes animate-ex-13-bottom-white {
     0% {
         right: 20%;
-        bottom: -5px;
+        bottom: -10px;
     }
 
     30% {
         right: 140px;
-        bottom: -5px;
+        bottom: -10px;
     }
 
     50% {
@@ -281,17 +280,17 @@
     }
 
     80% {
-        right: -5px;
+        right: -10px;
         bottom: 60px;
     }
-
+    
     95% {
         bottom: -10px;
         right: -10px;
     }
-
-    100% {
-        left: 10%;
+    
+    99% {
+        right: 20%;
         bottom: -10px;
-    }
+    } 
 }
