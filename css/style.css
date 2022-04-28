@@ -76,7 +76,7 @@
     background: #f5f5f5;
     width: 60px;
     height: 20px;
-    transition: top 1s, bottom 1s, left, 1s, right 1s;
+    border: 1px dashed black;
 }
 .ex-12-bottom-white, .ex-13-bottom-white {
     position: absolute;
@@ -85,6 +85,7 @@
     background: #f5f5f5;
     width: 60px;
     height: 20px;
+    border: 1px dashed black;
 }
 
 .ex-1-square:hover {
@@ -149,6 +150,18 @@
 
 .ex-12-button:hover .ex-12-bottom-white {
     animation-name: animate-ex-12-bottom-white;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+
+.ex-13-button:hover .ex-13-top-white {
+    animation-name: animate-ex-13-top-white;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+
+.ex-13-button:hover .ex-13-bottom-white {
+    animation-name: animate-ex-13-bottom-white;
     animation-duration: 2s;
     animation-timing-function: linear;
 }
@@ -218,5 +231,66 @@
 
     100% {
         right: 20%;
+    }
+}
+
+@keyframes animate-ex-13-top-white {
+    0% {
+        left: 10%;
+    }
+
+    30% {
+        left: 140px;
+        top: -10px;
+    }
+
+    50% {
+        top: 60px;
+        left: 140px;
+    }
+
+    80% {
+        left: -10px;
+        top: 60px;
+    }
+
+    95% {
+        top: -10px;
+        left: -10px
+    }
+
+    100% {
+        left: 10%;
+    }
+}
+
+@keyframes animate-ex-13-bottom-white {
+    0% {
+        right: 20%;
+        bottom: -10px;
+    }
+
+    30% {
+        right: 140px;
+        bottom: -10px;
+    }
+
+    50% {
+        bottom: 60px;
+        right: 140px;
+    }
+
+    80% {
+        right: -10px;
+        bottom: 60px;
+    }
+
+    95% {
+        top: -10px;
+        left: -10px
+    }
+
+    100% {
+        left: 10%;
     }
 }
